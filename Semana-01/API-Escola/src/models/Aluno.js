@@ -21,10 +21,10 @@ const Aluno = connection.define('alunos', {
 })
 
 // hooks 
-Aluno.beforeSave(async (aluno) => {
-    aluno.password = await hash(aluno.password, 8)
-    return aluno
-})
+// Aluno.beforeSave(async (aluno) => {
+//     aluno.password = await hash(aluno.password, 8)
+//     return aluno
+// })
 
 module.exports = Aluno
 
